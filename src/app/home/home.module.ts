@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-
+import { SwingModule } from 'angular2-swing';
 import { HomePage } from './home.page';
+import { SwipeCardComponent } from './swipe-card/swipe-card.component';
 
 @NgModule({
   imports: [
@@ -16,8 +17,9 @@ import { HomePage } from './home.page';
         path: '',
         component: HomePage
       }
-    ])
+    ]),
+    SwingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, SwipeCardComponent]
 })
 export class HomePageModule {}

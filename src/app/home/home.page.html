@@ -1,14 +1,26 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Ionic Blank
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="page-title">
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+
+<hr>
+  <!-- <div swing-stack #myswing1 [stackConfig]="stackConfig" (throwoutleft)="voteUp($event)" (throwoutright)="voteUp($event)" id="card-stack">
+  <div [ngClass]="getCardClass(i)" class="mycards1" #mycards1 swing-card *ngFor="let c of cards; let i = index">
+      <div  style="width: 100%; height: 100%; border:black 1px solid; ">
+        <h2>{{c}}</h2>
+      </div>
   </div>
+</div> -->
+
+<swipe-card></swipe-card>
+
+
 </ion-content>
